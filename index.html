@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code Warriors Seeker</title>
+    <title>Code Seeker Level Up</title>
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
@@ -32,13 +32,13 @@
 
     <!--left search-->
     <div class="md:w-1/2 mb-10 md:mb-0">
-        <h2 class="text-2xl md:text-4xl lg:text-6xl text-white mb-8">Welcome Code Warriors Seeker!</h2>
-        <h2 class="text-2xl md:text-4xl lg:text-6xl text-white mb-8">Version 2</h2>
+        <h2 class="text-2xl md:text-4xl lg:text-6xl text-white mb-8">Welcome to Code Seeker Level Up!</h2>
+        <h2 class="text-sm md:text-sm text-white mb-8">Version 2</h2>
         <h2 class="text-sm md:text-sm text-white mb-8">Search for Jobs in Massachusetts</h2>
 
         <form id="form" onsubmit="return validate()"  class="flex flex-col">
-            <!--                <input id="job" type="text" class="w-full text-gray-500 rounded py-3 px-6 mb-5 outline-none" placeholder="Search Software Engineering Jobs">-->
-            <input id="location" type="search" class="w-full text-gray-500 rounded py-3 px-6 outline-none" placeholder="City/Town" required>
+            <input id="job" type="text" class="w-full text-gray-500 rounded py-3 px-6 mb-5 outline-none" placeholder="Search Job" required>
+            <input id="location" type="search" class="w-full text-gray-500 rounded py-3 px-6 outline-none" placeholder="Location" required>
             <br>
             <button id="btn" class="w-36 py-3 px-6 text-lg bg-gray-300 text-gray-600 hover:bg-gray-200 rounded mr-2">Find Job</button>
         </form>
@@ -54,12 +54,14 @@
 
 
 <!--result-->
-<div id="my-job-result" class="relative flex flex-col items-center hidden"></div>
+<div id="my-job-result">
+    <h1 class="flex" >Results:</h1>
+</div>
 
 <!--footer-->
 <div class="p-10 bg-white text-gray-500 flex justify-center">
     <div class="flex items-center">
-        Copyright &copy; Code Warriors Seeker 2021
+        Copyright &copy; Code Seeker Level Up 2021
     </div>
 </div>
 
