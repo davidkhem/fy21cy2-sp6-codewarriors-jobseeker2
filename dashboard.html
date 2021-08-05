@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code Seeker Level Up</title>
+    <title>Next Level Seeker</title>
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 
     <!--left nav-->
     <div class="flex items-center ">
-        <img src="images/warriors-logo.jpg" width="80" alt="Logo" class="mr-2">
+        <img src="images/next-level-logo.png" alt="Logo" class="w-20 mr-2">
         <a href="index.html" class="inline-block p-2 text-gray-500 hover:text-indigo-100 mr-2">Home</a>
         <a href="#" class="inline-block p-2 text-gray-500 hover:text-indigo-100">Upload Resume</a>
     </div>
@@ -22,7 +22,7 @@
     <!--right nav-->
     <div class="hidden md:block">
         <a href="#" class="inline-block p-2 text-gray-500 hover:text-indigo-100 mr-2">Employers / Post Job</a>
-        <a href="#" class="inline-block py-2 px-4 text-yellow-800 bg-yellow-300 hover:bg-yellow-200 hover:text-white rounded">Sign In</a>
+        <a href="index.html" class="inline-block py-2 px-4 text-yellow-800 bg-yellow-300 hover:bg-yellow-200 hover:text-white rounded">Log Out</a>
     </div>
 
 </div>
@@ -32,12 +32,11 @@
 
     <!--left search-->
     <div class="md:w-1/2 mb-10 md:mb-0">
-        <h2 class="text-2xl md:text-4xl lg:text-6xl text-white mb-8">Welcome to Code Seeker Level Up!</h2>
-        <h2 class="text-sm md:text-sm text-white mb-8">Version 2</h2>
+        <h2 class="text-2xl md:text-4xl lg:text-6xl text-white mb-8">Welcome Next Level Seeker!</h2>
         <h2 class="text-sm md:text-sm text-white mb-8">Search for Jobs in Massachusetts</h2>
 
-        <form id="form" onsubmit="return validate()"  class="flex flex-col">
-            <input id="job" type="text" class="w-full text-gray-500 rounded py-3 px-6 mb-5 outline-none" placeholder="Search Job" required>
+        <form id="form" onsubmit="return validate()" class="flex flex-col">
+            <input id="job" type="text" class="w-full text-gray-500 rounded py-3 px-6 mb-8 outline-none" placeholder="Search Job" required>
             <input id="location" type="search" class="w-full text-gray-500 rounded py-3 px-6 outline-none" placeholder="Location" required>
             <br>
             <button id="btn" class="w-36 py-3 px-6 text-lg bg-gray-300 text-gray-600 hover:bg-gray-200 rounded mr-2">Find Job</button>
@@ -47,21 +46,26 @@
 
     <!--right image-->
     <div class="md:w-1/2">
-        <img src="images/software-engineer.jpg" alt="software-engineer" class="w-full rounded ml-5">
+        <div id="my-job-result" class="w-full h-96 bg-gray-100 ml-5 mb-64 p-4 overflow-auto">
+<!--            <h1 class="flex p-4" >Results:</h1>-->
+        </div>
+        <div id="placeholder-image">
+            <img src="images/software-engineer.jpg" alt="software-engineer" class="w-full rounded ml-5 hidden">
+        </div>
     </div>
 
 </div>
 
 
 <!--result-->
-<div id="my-job-result">
-    <h1 class="flex p-4" >Results:</h1>
-</div>
+<!--<div id="my-job-result">-->
+<!--    <h1 class="flex p-4" >Results:</h1>-->
+<!--</div>-->
 
 <!--footer-->
 <div class="p-10 bg-white text-gray-500 flex justify-center">
     <div class="flex items-center">
-        Copyright &copy; Code Seeker Level Up 2021
+        Copyright &copy; Next Level Seeker 2021
     </div>
 </div>
 
