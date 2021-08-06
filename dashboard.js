@@ -61,8 +61,8 @@ form.addEventListener('submit', (event)=> {
                                     <p>${aResult['created']}</p>
                 
                                     <p class="text-blue-400 mb-2">
-                                        <a href="mailto:?subject=Interested in the ${aResult['title']} position
-                                        &body=I want to applied to the position.">Email a Friend</a>
+                                        <a href="mailto:?subject=Hey, found this for you, ${aResult['title']} position
+                                        &body=I found this position for you if you want to applied.">Email a Friend</a>
                                     </p>
                                     <p><input class="mr-1" id="${aResult['index']}-btn" type="radio" value="Save">Save</input></p>
                                 </div>`
