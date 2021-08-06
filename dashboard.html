@@ -36,8 +36,22 @@
         <h2 class="text-sm md:text-sm text-white mb-8">Search for Jobs in Massachusetts</h2>
 
         <form id="form" onsubmit="return validate()" class="flex flex-col">
-            <input id="job" type="text" class="w-full text-gray-500 rounded py-3 px-6 mb-8 outline-none" placeholder="Search Job" required>
-            <input id="location" type="search" class="w-full text-gray-500 rounded py-3 px-6 outline-none" placeholder="Location" required>
+<!--            <input id="job" type="text" class="w-full text-gray-500 rounded py-3 px-6 mb-8 outline-none" placeholder="Search Job" required>-->
+            <select class="w-full text-gray-500 rounded py-3 px-6 mb-8 outline-none" name="filter-category" id="filter-category">
+                <option value=""> -- Choose Job -- </option>
+                <option value="software%20engineer">Software Engineer</option>
+                <option value="accounting">Accounting</option>
+                <option value="design">Design</option>
+                <option value="other">Other</option>
+            </select>
+<!--            <input id="location" type="search" class="w-full text-gray-500 rounded py-3 px-6 outline-none" placeholder="Location" required>-->
+            <select class="w-full text-gray-500 rounded py-3 px-6 mb-8 outline-none" name="filter-location" id="filter-location">
+                <option value=""> -- Choose Location -- </option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="california">California</option>
+                <option value="new%20york">New York</option>
+                <option value="texas">Texas</option>
+            </select>
             <br>
             <button id="btn" class="w-36 py-3 px-6 text-lg bg-gray-300 text-gray-600 hover:bg-gray-200 rounded mr-2">Find Job</button>
         </form>
@@ -56,8 +70,7 @@
 
 </div>
 
-
-<!--result-->
+<!--save result-->
 <!--<div id="my-job-result">-->
 <!--    <h1 class="flex p-4" >Results:</h1>-->
 <!--</div>-->
