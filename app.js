@@ -20,7 +20,7 @@ form.addEventListener('submit', (event) => {
         alert('Password need to be greater than 8 characters');
         return false;
     } else {
-        window.location.replace('dashboard.html');
+        location.replace('dashboard.html');
         return true;
     }
 
