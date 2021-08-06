@@ -16,10 +16,10 @@ const loc = '&where=';
 
 const form = document.querySelector('#form');
 const resultsDataSection = document.querySelector('#my-job-result')
+const resultsPhotoSection = document.querySelector('#placeholder-image')
 
 const categorySelect = document.querySelector('#filter-category')
 const locationSelect = document.querySelector('#filter-location')
-
 
 form.addEventListener('submit', (event)=> {
 
@@ -44,14 +44,14 @@ form.addEventListener('submit', (event)=> {
 
                     const apiData = result.results;
 
-
                     resultsDataSection.innerHTML = "";
+                    resultsDataSection.classList.remove('hidden');
+                    resultsPhotoSection.classList.add('hidden');
 
                     apiData.forEach(aResult => {
 
                             // Start: create the single div (component)
                             const resultsInnerDiv = document.createElement('div')
-
 
                             resultsInnerDiv.innerHTML =
                                 `<div class="flex flex-col justify-center w-2/3 h-40 ml-10 mb-2 p-1 text-black text-sm border-2">
@@ -72,10 +72,6 @@ form.addEventListener('submit', (event)=> {
                     })
                     console.log(apiData);
             });
-        return true;
+                        return true;
         }
 });
-
-// btn.addEventListener('click', () => {
-//     resultsDataSection.classList.remove('hidden');
-// });
